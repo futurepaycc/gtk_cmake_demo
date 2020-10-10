@@ -78,7 +78,7 @@ main_window_new (GApplication * app)
     /* Initializing the main window */
   main_window = gtk_application_window_new (GTK_APPLICATION (app));
   gtk_window_set_title (GTK_WINDOW (main_window), "Window");
-  gtk_window_set_default_size (GTK_WINDOW (main_window), 200, 200);
+  gtk_window_set_default_size (GTK_WINDOW (main_window), 800, 600);
 
   /* Setting main box */
   GtkWidget *main_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);

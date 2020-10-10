@@ -29,7 +29,7 @@ set(PROJECT_VERSION "0.1.0")
 # Default build-type is 'Release'
 set(Profile "Profile")
 if(NOT CMAKE_BUILD_TYPE)
-   set(CMAKE_BUILD_TYPE Release)
+   set(CMAKE_BUILD_TYPE Debug)
 endif(NOT CMAKE_BUILD_TYPE)
 
 # Setup specific properties
@@ -79,6 +79,8 @@ add_definitions(${GTK3_CFLAGS_OTHER})
 
 # Propagate to subdirectories
 add_subdirectory(src)
+add_subdirectory(hello1)
+add_subdirectory(cario1)
 
 # List found libraries
 message("** External Libraries and Tools")
